@@ -1,0 +1,185 @@
+.good-college-heading {
+    color: #EBCE31;
+
+}
+
+.good-college-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15.292px;
+    width: 100%;
+    align-items: center;
+    padding-top: 47px;
+    padding-bottom: 134px;
+    position: relative;
+    /* top: 0; */
+}
+
+.good-college-card {
+
+    display: flex;
+    padding: 23.279px 18.204px 25.702px 18px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16.161px;
+    border-radius: 15.292px;
+    border: 1.699px solid rgba(110, 246, 103, 0.54);
+    background: #141514;
+    max-width: 590px;
+    width: 100%;
+
+}
+
+.gc-odd {
+    transform: rotate(5.842deg);
+
+}
+
+.good-college-card-text {
+    color: #FFECB3;
+    font-family: Satoshi;
+    font-size: 27.186px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.595%;
+    /* 38.223px */
+    opacity: 0.8;
+    text-align: center;
+}
+
+.good-college-card-outer {
+    height: 100%;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+    animation: fadeanimation;
+    animation-timeline: view();
+}
+
+.gc-even {
+    transform: rotate(-4.72deg);
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.good-college-bottom {
+    color: #FFF;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.595%;
+    /* 42.179px */
+    opacity: 0.8;
+    max-width: 868px;
+    width: 100%;
+    padding: 56px 55px 32px;
+    flex-shrink: 0;
+    border-radius: 15.739px;
+    border: 1.312px solid rgba(73, 208, 67, 0.26);
+    background: #131513;
+    position: relative;
+}
+
+.good-college-bottom-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gcb-itsokay {
+    color: #090C09;
+    font-family: Satoshi;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 140.595%;
+    /* 56.238px */
+    /* display: inline-flex; */
+    padding: 7px 55px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 71.214px;
+    border: 1.424px solid #FFF;
+    background: #EBCE31;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeanimation {
+    0% {
+        filter: blur(10px);
+    }
+
+
+    25%,
+    60% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(30px);
+    }
+}
+
+@media(width<780px) {
+    .good-college-card-img {
+        width: 80px;
+    }
+
+    .good-college-cards {
+        padding-bottom: 75px;
+        padding-top: 30px;
+    }
+
+    .gcb-itsokay {
+        font-size: 20px;
+        padding: 7px 28px 8px 28px;
+        width: 155px;
+
+    }
+
+    .good-college-bottom {
+        font-size: 24px;
+        padding: 36px 8px 42px;
+    }
+}
+
+@media(width<580px) {
+    .good-college-card-text {
+        font-size: 16px;
+
+    }
+
+    .good-college-bottom {
+        font-size: 18px;
+    }
+
+    .gcb-itsokay {
+        font-size: 20px;
+
+    }
+
+    .good-college-card-img {
+        width: 60px;
+    }
+
+    .good-college-card {
+        gap: 5.924px;
+    }
+
+    .good-college-card-outer {
+        padding: 12px 0;
+    }
+}

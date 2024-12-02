@@ -1,0 +1,21 @@
+.network {
+    overflow: hidden;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.network-heading {
+    margin: 0 auto;
+    max-width: 891px;
+    padding-bottom: 19px;
+
+}
+
+.network-image {
+    width: 110%;
+    transform: translateX(-5%);
+}
+
+.network-small {
+    display: none;
+}

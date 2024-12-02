@@ -1,0 +1,111 @@
+.virtual-college-main {
+    border: 10.52px solid rgba(255, 255, 255, 0.00);
+    background: rgba(24, 27, 23, 0.50);
+    max-width: 1229.581px;
+    /* height: 608px; */
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: 31px;
+    padding: 36px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.virtual-college-main>img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 766/538;
+}
+
+.react-transform-wrapper.react-transform-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* .react-transform-component {
+    width: 100%;
+} */
+
+.virtual-college-plus,
+.virtual-college-minus {
+    display: inline-flex;
+    align-items: center;
+    gap: 6.567px;
+    cursor: pointer;
+}
+
+.virtual-college-zoom-controls {
+    display: flex;
+    align-items: center;
+    gap: 6.567px;
+    position: absolute;
+    right: 23px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+.virtual-college-plus>img,
+.virtual-college-minus>img {
+    width: 100%;
+    height: 100%;
+}
+
+.virtual-college-bottom {
+    display: none;
+}
+
+@media(width<768px) {
+    .virtual-college-zoom-controls {
+        gap: 2px;
+    }
+
+    .virtual-college-main {
+        padding: 24px 20px;
+        aspect-ratio: 355/264;
+        border: none;
+        border-radius: 7px;
+        background: #1C1F1C;
+    }
+
+    .virtual-college-minus,
+    .virtual-college-plus {
+        width: 30px;
+        height: 30px;
+    }
+
+    .virtual-college-bottom {
+        display: block;
+        text-align: center;
+        color: #FFF;
+        font-family: Satoshi;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-top: 16px;
+    }
+}
+
+@media(width<580px) {
+
+    .virtual-college-minus,
+    .virtual-college-plus {
+        width: 16px;
+        height: 16px;
+    }
+
+    .virtual-college-main {
+        padding: 18px 15px;
+    }
+
+    .virtual-college-zoom-controls {
+        right: 10px;
+        bottom: 11px;
+    }
+}
+
+@media(width<420px) {}

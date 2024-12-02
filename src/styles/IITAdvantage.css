@@ -1,0 +1,97 @@
+.iit-advantage {
+    background: rgba(217, 217, 217, 0.04);
+}
+
+.iit-advantage-subheading {
+    color: #FFF;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 33.6px */
+}
+
+.iit-advantage-cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 25px;
+    /* max-width: 1000px; */
+    padding-top: 53px;
+    justify-content: center;
+}
+
+.iit-advantage-card {
+    display: flex;
+    padding: 11.738px 40.175px 12.886px 28.188px;
+    align-items: center;
+    border-radius: 12px;
+    border: 1.342px solid rgba(255, 255, 255, 0.11);
+    width: 100%;
+    max-width: 446px;
+    gap: 28.188px;
+}
+
+.iit-advantage-card p {
+    color: #FFF;
+    font-family: Satoshi;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140.595%;
+    /* 30.931px */
+    opacity: 0.8;
+}
+
+@media(width<768px) {
+    .iit-advantage-subheading {
+        font-size: 20px;
+    }
+
+    .iit-advantage-cards {
+        padding-top: 28px;
+        gap: 0;
+    }
+
+    .iit-advantage-top {
+        padding: 0 16px;
+    }
+
+    section.iit-advantage {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .iit-advantage-card {
+        max-width: unset;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        border-radius: 0;
+
+    }
+
+    .iit-advantage-card p {
+        font-size: 18px;
+
+    }
+}
+
+@media(width<580px) {
+    .iit-advantage-subheading {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .iit-advantage-card p {
+        font-size: 16px;
+
+    }
+
+    .iit-advantage-card {
+        padding: 10px 21px;
+    }
+}
+
+@media(width<420px) {}

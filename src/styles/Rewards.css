@@ -1,0 +1,130 @@
+.reward {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.reward-heading {
+    text-align: center;
+}
+
+.reward-slide {
+    max-width: 352.084px;
+    min-height: 435.913px;
+    width: 100%;
+    border-radius: 23.943px;
+    border: 2.701px solid rgba(255, 255, 255, 0.05);
+    background: #141612;
+    box-shadow: 0px 9.577px 47.885px 0px rgba(255, 255, 255, 0.18);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reward-slide-para {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 34.748px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.reward-slide-1-img {
+    max-width: 228.854px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.reward-slide-2-img {
+    max-width: 222.253px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.reward-slide-3-img {
+    max-width: 310.274px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.mySwiper {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.reward-heading {
+    max-width: 456px;
+    padding-bottom: 74px;
+}
+
+.reward-bottom {
+    display: none;
+}
+
+@media(width<768px) {
+    .reward-slide {
+        min-height: 300.095px;
+        border-radius: 10.88px;
+        border: 1.228px solid rgba(255, 255, 255, 0.05);
+        background: #141612;
+        box-shadow: 0px 4.352px 21.761px 0px rgba(255, 255, 255, 0.18);
+        gap: 12px;
+        max-width: 80%;
+    }
+
+    .reward-slide-para {
+        font-size: 24px;
+    }
+
+    .mySwiper {
+        max-width: 294px;
+        padding-left: 50px;
+    }
+
+    .reward-heading {
+        text-align: left;
+    }
+}
+
+@media(width<580px) {
+    .reward-bottom {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding-top: 40px;
+    }
+
+    .reward-bottom-disc {
+        width: 10px;
+        height: 10px;
+        background: #ACACAC;
+        border-radius: 50%;
+    }
+
+    .reward-bottom-disc-active {
+        width: 14px;
+        height: 14px;
+        background: #6EF667;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+
+@media(width<420px) {
+    .mySwiper {
+        /* max-width: 210px; */
+    }
+}

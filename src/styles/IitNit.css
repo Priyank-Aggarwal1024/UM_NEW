@@ -1,0 +1,111 @@
+.iit-nit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    align-items: center;
+    font-size: 32px;
+}
+
+.iitnit-left {
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    padding: 20.11px 35px 20.11px 30px;
+    align-items: center;
+    gap: 28px;
+    border-radius: 24.133px;
+    border: 2.011px solid rgba(255, 255, 255, 0.13);
+    /* width: fit-content; */
+}
+
+.iitnitl-left {
+    color: #49D043;
+    text-align: center;
+    font-family: Satoshi;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 38.4px */
+}
+
+.iitnitl-middle {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 38.612px */
+}
+
+.iitnit-middle {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 38.612px */
+}
+
+.iitnit-right {
+    display: flex;
+    max-width: 327px;
+    width: 100%;
+    height: 103px;
+    padding: 20.11px 42.232px;
+    justify-content: center;
+    align-items: center;
+    gap: 20.11px;
+    border-radius: 24.133px;
+    border: 2.011px solid rgba(255, 255, 255, 0.13);
+    color: #49D043;
+    text-align: center;
+    font-family: Satoshi;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 38.4px */
+}
+
+
+@media(width<768px) {
+    .iit-nit {
+        font-size: 24px;
+    }
+}
+
+@media(width<580px) {
+    .iit-nit {
+        font-size: 16px;
+        gap: 11px;
+    }
+
+    .iitnit-left {
+        padding: 16px;
+        gap: 11px;
+        justify-content: space-between;
+        min-height: 70px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        background: rgba(255, 185, 18, 0.02);
+    }
+
+    .iitnit-right {
+        min-height: 70px;
+        height: 70px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        background: rgba(255, 185, 18, 0.02);
+        padding: 10px 21px;
+    }
+
+    .iitnitl-right {
+        width: 61px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+}
+
+@media(width<420px) {}
