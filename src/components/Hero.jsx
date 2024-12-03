@@ -1,7 +1,19 @@
 import '../styles/Hero.css'
 import VideoComp from './VideoComp';
 import umdash from '../assets/umdash.svg'
+import { useEffect, useState } from 'react';
+const TEXTS = ['developer', 'designer', 'coder'];
+
 function Hero() {
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(
+            () => setIndex((index) => index + 1),
+            3000,
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
     return (
         <>
             <div className="hero">
@@ -11,7 +23,7 @@ function Hero() {
                     <div className="hero-top-line"></div>
                 </div>
                 <div className="hero-heading">
-                    <h1>Become a developer</h1>
+                    <h1 className="hero-heading-textchange"><span>Become a</span> <span >{TEXTS[index % TEXTS.length]}</span></h1>
                     <h3 className="hero-subheading">India’s first virtual college </h3>
                 </div>
                 <div className="hero-large-btn">

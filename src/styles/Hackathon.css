@@ -106,6 +106,10 @@
     .hackathon-main {
         padding-top: 28px;
     }
+
+    .hackathon-left-box {
+        text-align: center;
+    }
 }
 
 @media(width<420px) {}

@@ -18,12 +18,20 @@ import IITAdvantage from '../components/IITAdvantage';
 import IitNit from '../components/IitNit';
 import Rewards from '../components/Rewards';
 import VirtualCollege from '../components/VirtualCollege';
+import arrow from '../assets/arrow.svg'
 function Layout() {
     const [divbg, setDivbg] = useState(false);
     const [curriculum, setCurriculum] = useState("")
-
+    const [openIndex, setOpenIndex] = useState(null);
+    const handleSectionClick = (idx) => {
+        if (idx == openIndex) {
+            setOpenIndex(null);
+        } else {
+            setOpenIndex(idx)
+        }
+    }
     return (
-        <div className="layout">
+        <div className={`layout layout-100vh`}>
             {divbg && <div className="layout-div-bg">
                 {divbg &&
                     <div className="course-curriculum">
@@ -35,7 +43,19 @@ function Layout() {
                             <h3 className="text-left">Curriculum</h3>
                             <div className="course-curriculum-list">
                                 {
-                                    content[curriculum]["topics1"].map((item, idx) => <div className="course-curriculum-item" key={idx}>{item?.section_name}</div>)
+                                    content[curriculum]["topics1"].map((item, idx) => <div className="course-curriculum-item" key={idx}>
+                                        <div className="course-curriculum-top" onClick={() => handleSectionClick(idx)}>
+                                            <p>{item?.section_name}</p>
+                                            <img src={arrow} alt="Arrow" className={`${idx == setOpenIndex && "rotate-180"}`} />
+                                        </div>
+                                        {
+                                            idx == openIndex && <ul className="course-curriculum-subitems">
+                                                {item["section_lectures"] && item["section_lectures"].length != 0 && item["section_lectures"].map((subitem, id) => <li className="course-curriculum-subitem" key={id}>
+                                                    {subitem}
+                                                </li>)}
+                                            </ul>
+                                        }
+                                    </div>)
                                 }
                             </div>
                         </div>
@@ -48,7 +68,7 @@ function Layout() {
                 <Hero />
                 <VirtualCollege />
                 <Courses setDivbg={setDivbg} setCurriculum={setCurriculum} />
-                <GoodCollege />
+                {/* <GoodCollege /> */}
                 <IITAdvantage />
                 <IitNit />
                 <Clubs />

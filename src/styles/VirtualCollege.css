@@ -1,17 +1,18 @@
 .virtual-college-main {
-    border: 10.52px solid rgba(255, 255, 255, 0.00);
+    /* border: 10.52px solid rgba(255, 255, 255, 0.00); */
     background: rgba(24, 27, 23, 0.50);
-    max-width: 1229.581px;
     /* height: 608px; */
-    width: 100%;
     flex-shrink: 0;
-    margin-top: 31px;
     padding: 36px;
     display: flex;
     justify-content: center;
-    width: 100%;
     position: relative;
     overflow: hidden;
+    width: fit-content;
+    margin: 31px auto 0;
+    max-width: 100%;
+    aspect-ratio: 766/538;
+
 }
 
 .virtual-college-main>img {
@@ -24,6 +25,8 @@
 .react-transform-wrapper.react-transform-wrapper {
     width: 100%;
     height: 100%;
+    border: 10px solid gray;
+    /* padding: 10px; */
 }
 
 /* .react-transform-component {

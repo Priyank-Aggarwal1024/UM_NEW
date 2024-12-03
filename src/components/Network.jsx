@@ -7,8 +7,8 @@ function Network() {
         <>
             <section className="section network">
                 <h2 className="network-heading text-center text-yellow">Get Access to Peers and Seniors Working in Top Companies</h2>
-                <img src={network} alt="Network" className="network-image network-large" />
-                <img src={networkSmall} alt="Network" className="network-image network-small" />
+                <img src={network} alt="Network" className="network-image network-large-img" />
+                <img src={networkSmall} alt="Network" className="network-image network-small-img" />
             </section>
         </>
     );

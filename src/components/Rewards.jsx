@@ -36,9 +36,7 @@ function Rewards() {
                     perSlideRotate: width > 600 ? 10 : 6
                 }}
             >
-
-
-                <SwiperSlide className="reward-slide">
+ <SwiperSlide className="reward-slide">
                     <img src={cup} alt="cup" className="reward-slide-1-img" />
                     <div className="reward-slide-para">Mug</div>
 

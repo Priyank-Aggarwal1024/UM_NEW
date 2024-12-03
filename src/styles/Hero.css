@@ -41,10 +41,18 @@
 }
 
 .hero-video {
-    max-width: 660px;
+    max-width: 510px;
 
     width: 100%;
     margin-top: 51px;
+}
+
+.hero-heading-textchange {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .hero-small-btn {
