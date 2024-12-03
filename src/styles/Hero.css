@@ -53,6 +53,7 @@
     gap: 10px;
     overflow: hidden;
     width: 100%;
+
 }
 
 .hero-small-btn {
@@ -121,7 +122,14 @@
     .hero-video {
         margin-top: 0;
     }
+
+    .hero-heading-textchange {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
 }
+
 
 @media(width<420px) {
     .hero {
